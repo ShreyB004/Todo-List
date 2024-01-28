@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="todo.css" type="text/css">
+	<title>Todo List</title>
+</head>
+<body>
+
+<nav class="navigation">
+	<button data-open-section="home" id="viewAllTasksNaviBtn" class="material-icons navigate-btns home-btn navig-active">home</button>
+	<button data-open-section="create" id="createTaskNaviBtn" class="material-icons navigate-btns special-btn">add</button>
+	<button data-open-section="settings" class="material-icons navigate-btns settings-btn">settings</button>
+</nav>
+
+<main class="application-wrapper">
+	<section class="application-sections home-section" id="home">
+		<header class="todo-list-header">
+			<div class="image-holder">
+				<img src="assets/images/test.png" class="user-profile-image">
+			</div>
+			<h1 id="userName">Hello</h1>
+		</header>
+		<div class="user-tasks">
+			<header>
+				<h3>Your Tasks</h3>
+				<div class="search-tasks-holder">
+					<i class="material-icons">search</i>
+					<input type="text" placeholder="Search Tasks" id="taskSearchIp" autocomplete="false" name="searchTasks">
+				</div>
+			</header>
+			<div class="main-tasks-holder">
+				<div class="no-tasks-holder">
+					<button class="goto-create-task__btn material-icons">add</button>
+					<span class="no-tasks-span">Create New Task</span>
+				</div>
+				<div class="no-searched-tasks-holder">
+					<div><div></div></div>
+				</div>
+					</div`Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.		</div>
+	</section>
+	<section class="application-sections create-task-section" id="create">
+		<header class="todo-list-header">
+			<h1>New Tasks</h1>
+		</header>
+		<div class="create-tasks-holder">
+			<div class="create-task-input-holder title-holder">
+				<i class="material-icons">add</i>
+				<input type="text" placeholder="Task Title" autocomplete="false" id="createNewTask">
+				<div class="invalid-details">Uh Oh! Title is Empty</div>
+			</div>
+			<div class="create-task-input-holder tags-holder">
+				<i class="material-icons">tag</i>
+				<input type="text" maxlength="30" placeholder="Task tags" autocomplete="false" id="createTags">
+				<div class="invalid-details">Empty Tag?</div>
+			</div>
+			<div class="create-task-input-holder more-details-holder">
+				<i class="material-icons">info_outline</i>
+				<textarea placeholder="Add your task details" autocomplete="false" id="createDetails"></textarea>
+				<div class="invalid-details">Where are Details?</div>
+			</div>
+			<div class="create-task-color-holder">
+				<h4>Pick Color</h4>
+				<div data-color="#f44336" class="tasks-colors"></div>
+				<div data-color="#e91e63" class="tasks-colors"></div>
+				<div data-color="#9c27b0" class="tasks-colors"></div>
+				<div data-color="#673ab7" class="tasks-colors"></div>
+				<div data-color="#3f51b5" class="tasks-colors"></div>
+				<div data-color="#2196f3" class="tasks-colors"></div>
+				<div data-color="#03a9f4" class="tasks-colors"></div>
+				<div data-color="#00bcd4" class="tasks-colors"></div>
+				<div data-color="#009688" class="tasks-colors"></div>
+				<div data-color="#4caf50" class="tasks-colors"></div>
+				<div data-color="#8bc34a" class="tasks-colors"></div>
+				<div data-color="#cddc39" class="tasks-colors"></div>
+				<div data-color="#ffeb3b" class="tasks-colors"></div>
+				<div data-color="#ffc107" class="tasks-colors"></div>
+				<div data-color="#ff9800" class="tasks-colors"></div>
+				<div data-color="#795548" class="tasks-colors"></div>
+				<div data-color="#ff5722" class="tasks-colors"></div>
+				<div data-color="#9e9e9e" class="tasks-colors"></div>
+			</div>
+			<div class="create-task-btn-holder">
+				<button class="create-task-btn" id="createNewTaskBtn">Create Task</button>
+			</div>
+		</div>
+	</section>
+	<section class="application-sections settings-section" id="settings">
+		<header class="todo-list-header">
+			<h1>Settings</h1>
+		</header>
+		<div class="main-settings-holder">
+			<div class="image-settings-holder">
+				<div class="user-image-holder">
+					<img src="assets/images/test.png" class="user-profile-image" id="userImage" alt="User Image">
+					<input type="file" id="userImageInput" name="imageRead">
+				</div>
+			</div>
+			<div class="other-settings-holder">
+				<div class="setting-holder">
+					<span class="settings-name">Username</span>
+					<input type="text" id="userNameInput" autocomplete="false" value="Shrey" placeholder="Username">
+				</div>
+				<div class="setting-holder">
+					<span class="settings-name">Dark Mode</span>
+					<div class="toggle-holder">
+						<input type="checkbox" id="darkModeToggle">
+						<div class="toggle"></div>
+					</div>
+				</div>
+				<div class="setting-holder">
+					<button class="navigate-slide-btn prev-btn material-icons">chevron_left</button>
+					<button class="navigate-slide-btn next-btn material-icons">chevron_right</button>
+					<div class="images-slide-holder">
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(1).jpg?alt=media&token=55a22615-ad88-428a-89f8-27f11d12a62c">
+
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(2).jpg?alt=media&token=225a911c-c069-4ca7-8445-82c2df5514f5">
+						
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(3).jpg?alt=media&token=10ba7051-8cd3-4bc8-8dec-081d696ee581">
+						
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(4).jpg?alt=media&token=9a727319-7557-481e-a197-48fb668ae36c">
+						
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(5).jpg?alt=media&token=729f434c-6e48-46cd-9d91-e4f61c6b1e9b">
+						
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(6).jpg?alt=media&token=0020327e-ae1e-4127-8533-bc637bd7885f">
+						
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(7).jpg?alt=media&token=fe77417d-540f-4c28-8723-9d9e474e8f65">
+						
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(8).jpg?alt=media&token=631d8b8b-7b05-4abf-97cf-b09324fefe89">
+						
+						<img data-src="https://firebasestorage.googleapis.com/v0/b/todo-list-a080a.appspot.com/o/Background%20Images%2Fwallpaperflare.com_wallpaper%20(9).jpg?alt=media&token=649f96eb-f5b5-4553-ac49-f5248e70d07f">
+					</div>
+				</div>
+				<div class="setting-holder">
+					<span class="settings-name">Export Database</span>
+					<i class="material-icons">upload</i>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
+
+<script defer src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+<script defer src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+<script defer src="assets/scripts/anime.js"></script>
+<script defer src="todo.js"></script>
+</body>
+</html>
